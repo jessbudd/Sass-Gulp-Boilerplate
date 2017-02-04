@@ -51,17 +51,17 @@
 	
 </footer>
 
-	<!-- CDN jQuery-->
-  	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
-  	<!--local jQuery if CDN fails to load-->
-  	<script>window.jQuery || document.write('<script src="js/jquery-1.12.3.min.js"><\/script>');</script>
- 
- 	<!--CDN bootstrap script-->
-   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-   	<!--custom script-->
- 	<script src="js/script.js"></script>
+   	<!-- build:js js/script.min.js -->
+
+     <!--jquery-->
+    <script src="js/jquery.min.js"></script>
+    
+    <!--custom-->
+ 	  <script src="js/script.js"></script>
+     
+     <!-- endbuild -->
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -72,7 +72,7 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-
+    
 
 </body>
 
