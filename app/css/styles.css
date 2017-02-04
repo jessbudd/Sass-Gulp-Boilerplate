@@ -1,0 +1,13 @@
+.testing {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  background: green;
+}
+
+h1 {
+  color: red;
+}
