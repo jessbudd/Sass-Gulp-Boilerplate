@@ -1,7 +1,3 @@
-#
-
-# Read Me
-
 This is a basic boilerplate for projects using Sass and Gulp I created for my own personal use, however feel free to use it if you find it helpful.
 
 ## Basic File Structure
@@ -15,10 +11,10 @@ This is a basic boilerplate for projects using Sass and Gulp I created for my ow
     --script.js
     --jquery.min.js
 --index.html
---.gitignore
 --gulpfile.js
 --package.json
 --readme.md
+--.gitignore
 ```
 
 (Production folder will be created automatically on build)
@@ -26,15 +22,15 @@ This is a basic boilerplate for projects using Sass and Gulp I created for my ow
 ## What does it do?
 
 * Compiles sass to unminiified css in your src directory
-* Compile sass to mininifed css in your prod directory
-* Adds autoprefixes and sourcemaps to css
-* Watches css, js and html files and live reloads dev server (localhost:3000)
+* Compiles sass to mininifed css in your prod directory
+* Autoprefixes to the last 4 versions and adds sourcemaps to css
+* Watches css, js and html files to live reload dev server (localhost:3000) when a save is detected
 * Concatenates and minifies javascript files
-* Optimises and caches images (jpg, png, svg, gif)
-* Builds a clean production website folder
+* Optimises and caches images in image folder (jpg, png, svg, gif)
+* Builds a clean production website folder on command
 
 
-## Dependencies
+### Dependencies
 * gulp
 * gulp-Sass
 * browser-sync
@@ -61,8 +57,9 @@ This is a basic boilerplate for projects using Sass and Gulp I created for my ow
 
 ###Gulp
 
-4. Run the command `gulp` to spin up a development server and have your sass, html and js files automatically reload
+Run the command `gulp` to spin up a development server. Your sass, html and js files automatically reload when saved.
 
 ###Gulp Build
 
-5. Run the command `gulp build` to delete previous builds, concat and minify css and js and optimise images. A new "prod" folder will be created with all files needed for production. 
+Run the command `gulp build` to delete previous builds, concat and minify css and js and optimise images.
+A new "prod" folder will be created with all other files needed for production. 
