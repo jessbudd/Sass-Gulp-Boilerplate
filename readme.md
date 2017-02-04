@@ -55,11 +55,11 @@ This is a basic boilerplate for projects using Sass and Gulp I created for my ow
 3. Run `npm install` which will install all dependencies into a `node_modules` folder (located at the root of your project directory)
 
 
-###Gulp
+### Development
 
 Run the command `gulp` to spin up a development server. Your sass, html and js files automatically reload when saved.
 
-###Gulp Build
+### Production
 
 Run the command `gulp build` to delete previous builds, concat and minify css and js and optimise images.
 A new "prod" folder will be created with all other files needed for production. 
