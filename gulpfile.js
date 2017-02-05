@@ -26,13 +26,12 @@ gulp.task('sass', function() {
                 browsers: ['last 4 versions'],
                 cascade: false}))
             .pipe(gulp.dest('src/css'))
-            
         
-        //create minified css file in prod folder
+        //create minified css file in src folder
         .pipe(sass(
           ({outputStyle: 'compressed'})))
             .pipe(rename({suffix: '.min'}))
-            .pipe(gulp.dest('prod/css'))
+            .pipe(gulp.dest('src/css'))
 
         //add sourcemaps
         .pipe(sourcemaps.write('./'))
@@ -91,7 +90,13 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('prod/fonts'))
 });
 
+//send minified css to prod folder
+gulp.task('css', function() {
+  return gulp.src('src/css/styles.min.css')
+  .pipe(gulp.dest('prod/css'))
+});
+
 //run build production folder task
 gulp.task('build', function(callback) {
-  runSequence('clean:prod', ['sass', 'useref', 'images', 'fonts'], callback);
+  runSequence('clean:prod', ['sass', 'useref', 'images', 'fonts', 'css'], callback);
 });
