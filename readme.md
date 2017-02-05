@@ -2,6 +2,12 @@ This is a basic boilerplate for projects using Sass and Gulp I created for my ow
 
 ## Basic File Structure
 ```
+|--css
+|--fonts
+|--images
+|--js
+    |--script.js
+    |--jquery.min.js
 |--src
 |--scss
     |--styles.scss
@@ -11,11 +17,6 @@ This is a basic boilerplate for projects using Sass and Gulp I created for my ow
     |--layout
     |--pages
     |--vendor
-|--css
-|--images
-|--js
-    |--script.js
-    |--jquery.min.js
 |--index.html
 |--gulpfile.js
 |--package.json
